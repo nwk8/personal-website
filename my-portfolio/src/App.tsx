@@ -39,8 +39,8 @@ function App() {
     <div className="site-shell">
       <header className="navbar">
         <a className="brand" href="#home" aria-label="Home">
-          <span className="brand-mark">✳</span>
-          <span>neema kanyi<span className="brand-dot">.</span></span>
+          <img src="./src/components/meicon.jpeg" alt="Neema Kanyi"/>
+                    <span>neema kanyi<span className="brand-dot">.</span></span>
         </a>
 
         <nav className="nav-links" aria-label="Main navigation">

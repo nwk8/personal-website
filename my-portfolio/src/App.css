@@ -1039,3 +1039,11 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+.brand img {
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+  border-radius: 0;
+  flex-shrink: 0;
+}
