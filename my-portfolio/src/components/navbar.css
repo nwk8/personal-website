@@ -1,0 +1,123 @@
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid #e9e9ed;
+  backdrop-filter: blur(16px);
+}
+
+.navbar {
+  width: min(1120px, calc(100% - 48px));
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #17171c;
+  font-size: 18px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 11px;
+  background: #ff6c37;
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.navbar-links > a {
+  color: #555561;
+  font-size: 14px;
+  font-weight: 550;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.navbar-links > a:hover {
+  color: #ff6c37;
+}
+
+.navbar-links .navbar-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 17px;
+  border-radius: 8px;
+  background: #17171c;
+  color: white;
+}
+
+.navbar-links .navbar-contact:hover {
+  background: #ff6c37;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  color: #17171c;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    width: calc(100% - 32px);
+    min-height: 68px;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px 24px 20px;
+    background: white;
+    border-bottom: 1px solid #e9e9ed;
+  }
+
+  .navbar-links.is-open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links > a {
+    padding: 14px 0;
+  }
+
+  .navbar-links .navbar-contact {
+    justify-content: center;
+    margin-top: 8px;
+    padding: 12px;
+  }
+}
