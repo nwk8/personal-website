@@ -1,5 +1,6 @@
 
 import "./App.css";
+import profileImage from "./components/meicon.jpeg";
 
 const projects = [
   {
@@ -39,7 +40,7 @@ function App() {
     <div className="site-shell">
       <header className="navbar">
         <a className="brand" href="#home" aria-label="Home">
-          <img src="./src/components/meicon.jpeg" alt="Neema Kanyi"/>
+          <img src={profileImage} alt="Neema Kanyi"/>
                     <span>neema kanyi<span className="brand-dot">.</span></span>
         </a>
 
